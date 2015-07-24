@@ -5,5 +5,6 @@
 # Report building
 library(knitr)
 
+# Create markdown report from Rmd file.
 knit2html("report.Rmd")
 
