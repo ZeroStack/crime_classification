@@ -8,7 +8,7 @@
 echo = TRUE
 
 # Set working directory to parent
-this.dir <- dirname(parent.frame(2)$ofile)
+this.dir <- dirname(setwd())
 setwd(this.dir)
 print(this.dir)
 ```

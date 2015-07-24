@@ -9,11 +9,11 @@
 echo = TRUE
 
 # Set working directory to parent
-this.dir <- dirname(parent.frame(2)$ofile)
+this.dir <- dirname(setwd())
 ```
 
 ```
-## Error in dirname(parent.frame(2)$ofile): a character vector argument expected
+## Error in setwd(): argument "dir" is missing, with no default
 ```
 
 ```r

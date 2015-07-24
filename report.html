@@ -211,10 +211,10 @@ hr {
 echo = TRUE
 
 # Set working directory to parent
-this.dir &lt;- dirname(parent.frame(2)$ofile)
+this.dir &lt;- dirname(setwd())
 </code></pre>
 
-<pre><code>## Error in dirname(parent.frame(2)$ofile): a character vector argument expected
+<pre><code>## Error in setwd(): argument &quot;dir&quot; is missing, with no default
 </code></pre>
 
 <pre><code class="r">setwd(this.dir)
